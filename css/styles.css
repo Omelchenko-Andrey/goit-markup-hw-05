@@ -629,6 +629,46 @@ border: 1px solid #ECECEC;
 }
 
 
+.portfolio-box{
+    outline: 7px solid red;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.portfolio-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(137%);
+    width: 370px;
+    height: 294px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(33, 150, 243, 0.9);
+    
+
+    transition: transform var(--anim-fast);
+}
+
+.portfolio-overlay-text{
+    color: var(--white-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height:1.5;
+    letter-spacing: 0.03em;
+    padding: 63px 24px;
+    
+}
+
+.portfolio-box:hover .portfolio-overlay{
+    transform: translateY(0);
+}
+
+
 
 
 
