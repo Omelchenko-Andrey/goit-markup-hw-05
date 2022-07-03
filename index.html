@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
-<body>
+<body data-body>
   <!-- Header -->
   <header class="page-header">
     <div class="container nav">
@@ -57,7 +57,7 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="hero-button" type="button">Заказать услугу</button>
+        <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
@@ -119,23 +119,14 @@
       <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="work-list card-set list-reset">
-          <li class="work-image card-set-item product">
+          <li class="work-image card-set-item">
             <img src="./images/doings/img-1.jpg" alt="Десктопные приложения" width="370" height="294" />
-            <div class="products-action">
-              <p class="products-title">Десктопные приложения</p>
-            </div>
           </li>
-          <li class="work-image card-set-item product">
+          <li class="work-image card-set-item">
             <img src="./images/doings/img-2.jpg" alt="Мобильные приложения" width="370" height="294" />
-            <div class="products-action">
-              <p class="products-title">Мобильные приложения</p>
-              </div>
           </li>
-          <li class="work-image card-set-item product">
+          <li class="work-image card-set-item">
             <img src="./images/doings/img-3.jpg" alt="Дизайнерские решения" width="370" height="294" />
-            <div class="products-action">
-              <p class="products-title">Дизайнерские решения</p>
-              </div>
           </li>
         </ul>
       </div>
@@ -399,6 +390,18 @@
         </div>
     </div>
   </footer>
+
+  <!-- Modal Window -->
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="modal-close-btn" type="button" data-modal-close>
+        <svg width="18px" height="18px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
